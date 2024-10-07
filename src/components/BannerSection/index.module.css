@@ -1,0 +1,73 @@
+@import url(../../styles/GlobalStyles.css);
+
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 332px;
+      margin-inline: auto;
+      margin-top: 28px;
+      gap: 3.9375rem;
+      transition: width .5s ease-in-out;
+
+}
+
+.first__box {
+      display: flex;
+      flex-direction: column;
+      min-width: 280px;
+      height: 277px;
+      gap: 1rem;
+
+}
+
+.username {
+      color: var(--color-primary);
+      font-size: var(--label);
+      font-family: 'Inter', sans-serif;
+}
+
+.banner__button {
+      width: 130px;
+      height: 39px;
+      border-radius: 12px;
+      border: 1px solid #000;
+      background-color: var(--color-primary);
+      font-family: var(--font);
+      font-size: var(--label);
+
+}
+
+.banner__button:hover {
+      background-color: var(--color-primary-hover);
+}
+
+.banner__img {
+      min-width: 309.692px;
+}
+
+@media screen {
+      .container {
+            width: 90vw;
+            margin-top: 98px;
+            margin-bottom: 0;
+            max-width: 900px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+      }
+
+      .first__box {
+            max-width: 320px;
+      }
+
+      .banner__img {
+            max-width: 437px;
+      }
+}
+
+@media screen and (min-width:876px) {
+      .container {
+            justify-content: space-between;
+      }
+}

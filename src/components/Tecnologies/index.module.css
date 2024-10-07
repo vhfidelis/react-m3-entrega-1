@@ -1,0 +1,66 @@
+@import url(../../styles/GlobalStyles.css);
+
+.tecnologies__container {
+      min-width: 332px;
+      max-width: 332px;
+      margin-inline: auto;
+      margin-top: 90px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      transition: width .5s ease-in-out;
+}
+
+.tecnologies__title {
+      font-family: var(--font);
+      font-size: var(--title2);
+      font-weight: 800;
+      margin-bottom: 25px;
+}
+
+.li__container {
+      display: flex;
+      width: 332px;
+      height: 86px;
+      gap: 2rem;
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.50);
+      align-items: center;
+      box-sizing: border-box;
+      transition: width .5s ease-in-out;
+}
+
+.div__container {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      gap: 1rem;
+}
+
+.tech__logo {
+      width: fit-content;
+      margin-left: 20px;
+}
+
+@media screen and (min-width:391px) {
+      .tecnologies__container {
+            width: 90vw;
+            max-width: 900px;
+            align-items: flex-start;
+            margin-top: 100px;
+            margin-bottom: 0;
+      }
+
+      .div__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+      }
+
+      .li__container {
+            width: 287px;
+            height: 86px;
+            flex-shrink: 0;
+      }
+
+}
